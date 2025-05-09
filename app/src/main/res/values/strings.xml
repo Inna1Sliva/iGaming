@@ -1,3 +1,30 @@
 <resources>
-    <string name="app_name">server_v1</string>
+    <string name="app_name">iGAMING</string>
+    <string name="start_winning_now">start winning now</string>
+    <string name="name_games">GetX</string>
+    <string name="number_position">1</string>
+    <string name="bonus">100% на первый депозит до 10.000 рублей</string>
+    <string name="recoil">95-96%</string>
+    <string name="Cashback">10%</string>
+    <string name="button_play">Играть</string>
+    <string name="top_club">Рекомендуем</string>
+    <string name="best_club">Лучшие игровые клубы</string>
+    <string name="top_slot">Топ слоты</string>
+    <string name="error">Что-то пошло не так. Попробуйте перезагрузить приложение и проверьте подключение к интернету.</string>
+    <string name="contentDescription_recyclerView">Список лучших игровых клубов</string>
+    <string name="contentDescription_image">Картинка</string>
+    <string name="name_slot">Lucky Joker 100</string>
+    <string name="name_slot_casino">Казино</string>
+    <string name="slot_bonus_casino">Бонус</string>
+    <string name="slot_recoil_casino">Отдача</string>
+    <string name="slot_cashback_casino">Кэшбэк</string>
+    <string name="enter">Войти</string>
+    <string name="Welcome">Добро пожаловать</string>
+    <string name="number">Укажите вашу электронную почту и придумайте пароль </string>
+    <string name="password">Пароль не должен быть  меньше 6 цифр. </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

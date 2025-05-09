@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace 'com.template'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.template"
@@ -46,15 +46,22 @@ android {
 }
 
 dependencies {
-
-    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation project(path: ':domain')
+    implementation project(path: ':data')
+    implementation 'androidx.core:core-ktx:1.16.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.6.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation "com.squareup.okhttp3:okhttp:4.10.0"
     implementation "io.insert-koin:koin-android:3.2.0"
+    implementation "androidx.fragment:fragment-ktx:1.8.4"
+    api "androidx.navigation:navigation-fragment-ktx:2.8.9"
 
+    implementation "androidx.paging:paging-runtime:3.3.6"
+    implementation 'com.airbnb.android:lottie:6.6.6'
 
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation "com.github.bumptech.glide:glide:4.16.0"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
     implementation "androidx.lifecycle:lifecycle-common-java8:2.5.1"
@@ -63,9 +70,17 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
 
 
-    implementation 'com.google.firebase:firebase-config:21.4.1'
-    implementation 'com.google.firebase:firebase-analytics-ktx:21.3.0'
-    implementation 'com.google.firebase:firebase-config-ktx:21.4.1'
+    implementation 'com.google.firebase:firebase-config:22.1.0'
+    implementation 'com.google.firebase:firebase-analytics-ktx:22.3.0'
+    implementation 'com.google.firebase:firebase-config-ktx:22.1.0'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.0.0'
+    implementation(platform("com.google.firebase:firebase-bom:33.10.0"))
+  // implementation 'com.google.firebase:firebase-database:21.0.0'
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation("com.google.firebase:firebase-auth")
+    
+    implementation 'androidx.activity:activity:1.8.0'
+    implementation 'androidx.core:core:1.9.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

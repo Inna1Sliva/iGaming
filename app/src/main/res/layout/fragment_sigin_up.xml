@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".fragments.SiginUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Welcome"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/number"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/password"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:hint="Почта"
+                android:textColorHint="#8E8E8E"
+                android:focusable="true"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+
+                />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:hint="Пароль"
+                android:textColorHint="#8E8E8E"
+                android:focusable="true"
+                android:inputType="numberPassword"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/buttNext"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="60dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="25dp"
+                android:rotation="-90"
+                android:src="@drawable/butt_next" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

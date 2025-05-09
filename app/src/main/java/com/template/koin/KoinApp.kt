@@ -13,7 +13,7 @@ class KoinApp :Application(){
         startKoin {
             androidLogger(Level.DEBUG)
             androidContext(this@KoinApp)
-            modules(listOf(moduleViewModel, firebaseModule,sharedPrefModel))
+            modules(listOf(moduleViewModel, firebaseModule))
         }
     }
 }
