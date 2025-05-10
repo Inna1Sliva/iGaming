@@ -1,6 +1,8 @@
 # iGaming
 **iGaming app — это мобильное приложение, разработанное на языке Kotlin, предназначенное для работы с игровой платформой.**
-![start]()
+  ![main](https://github.com/Inna1Sliva/iGaming/blob/main/assets/%D1%8D%D0%BA%D1%80%D0%B0%D0%BD.png)
+
+
 
 ## Основной функционал приложения:
 :one: В приложении реализована регистрация пользователей с использованием **Firebase Authentication** и хранение данных в **Firebase Realtime Database**.
